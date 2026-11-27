@@ -5,49 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Academic homepage of Amit Banerjee, Associate Professor at South Asian University.">
 <title>Amit Banerjee | Academic Homepage</title>
-<style>
-:root{--ink:#1f2937;--muted:#64748b;--blue:#174a78;--pale:#eef4f8;--line:#dce5ec;--bg:#f5f7fa}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-header{background:linear-gradient(120deg,#123b61,#23658c);color:white;padding:38px 20px 32px}
-.hero{max-width:1080px;margin:auto;display:flex;gap:24px;align-items:center}.avatar{width:112px;height:112px;border-radius:50%;background:#e5eef5;color:#174a78;display:grid;place-items:center;font-size:34px;font-weight:750;border:4px solid #ffffff66;flex:none}
-h1{font-size:clamp(2rem,5vw,2.7rem);line-height:1.15;margin:0 0 8px}.role{margin:0;color:#e4eef7}.sub{margin:5px 0 0;color:#d4e4f1}
-nav{position:sticky;top:0;background:white;border-bottom:1px solid var(--line);z-index:5;overflow-x:auto}
-nav .inner{max-width:1080px;margin:auto;padding:0 16px;display:flex;gap:4px;white-space:nowrap}
-nav a{display:block;padding:13px 12px;color:var(--blue);text-decoration:none;font-size:.92rem;font-weight:600}nav a:hover{background:var(--pale)}
-main{max-width:1080px;margin:28px auto;padding:0 18px 50px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:25px 28px;margin:0 0 20px;box-shadow:0 3px 14px #172b3b08}
-h2{font-size:1.45rem;color:var(--blue);margin:0 0 15px;padding-bottom:9px;border-bottom:1px solid var(--line)}
-h3{margin:18px 0 8px;color:#284b68}p{margin:8px 0}.meta{color:var(--muted)}ul,ol{padding-left:24px}li{margin:7px 0}.contact a,a{color:#17649a}.contact{margin-top:15px}.pill{display:inline-block;background:var(--pale);color:#214e70;padding:4px 10px;border-radius:30px;margin:3px 5px 3px 0;font-size:.9rem}
-footer{text-align:center;color:var(--muted);padding:22px;font-size:.9rem}
-@media(max-width:650px){.hero{align-items:flex-start}.avatar{width:76px;height:76px;font-size:25px}.card{padding:20px 17px}nav a{padding:11px 9px;font-size:.85rem}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="top">
- <div class="hero">
-  <div class="avatar" aria-hidden="true">AB</div>
+<header id="top" class="site-header">
+ <div class="hero container">
+  <div class="avatar" aria-hidden="true"><span>AB</span></div>
   <div>
-   <h1>Amit Banerjee</h1>
+   <p class="eyebrow">ACADEMIC PROFILE</p><h1>Amit Banerjee</h1>
    <p class="role">Senior Member of IEEE · Member of ACM</p>
    <p class="role"><strong>Associate Professor</strong>, Department of Computer Science and Engineering</p>
    <p class="sub">South Asian University · New Delhi, India</p>
   </div>
  </div>
 </header>
-<nav aria-label="Main navigation"><div class="inner">
+<nav class="site-nav" aria-label="Main navigation"><div class="inner container">
 <a href="#about">About</a><a href="#research">Research</a><a href="#journals">Journal Publications</a><a href="#conferences">Conference Publications</a><a href="#teaching">Teaching</a><a href="#participations">Conference Talks</a><a href="#lab">DSS Lab</a><a href="#contact">Contact</a>
 </div></nav>
-<main>
-<section class="card" id="about">
-<h2>About</h2>
+<main class="container page-layout">
+<section class="card content-card" id="about">
+<h2>About</h2><p class="lead">Researching dependable, scalable and intelligent distributed systems.</p>
 <p><strong>Amit Banerjee</strong> is an Associate Professor in the Department of Computer Science and Engineering at South Asian University (SAU), an international university established by all SAARC Member States.</p>
 <p>He received his Ph.D. in Computer Science from National Tsing-Hua University, Hsinchu, Taiwan, in 2009, followed by two years of research experience at the SoC Technology Center, Industrial Technology Research Institute (ITRI), Taiwan. Since 2011, he has been with the Department of Computer Science, South Asian University, New Delhi.</p>
 <p>His research contributions have been widely published in leading peer-reviewed journals and international conferences. He actively engages in scholarly service as a reviewer for reputed journals and as a member of technical program committees of international conferences. Dr Banerjee is a recipient of the 2025 IETE Brig. M. L. Anand Award and holds professional memberships as an IEEE senior member and a member of the ACM.</p>
 <p class="meta">South Asian University, Rajpur Road, Maidan Garhi, New Delhi 110068</p>
 </section>
-<section class="card" id="research"><h2>Current Research Interests</h2>
+<section class="card content-card" id="research"><h2>Current Research Interests</h2>
 <span class="pill">Distributed Systems</span><span class="pill">Blockchain Technology</span><span class="pill">Software Defined Networks</span><span class="pill">Cloud and Edge Computing</span><span class="pill">Internet-of-Things</span>
 <p>For more detail, visit the <a href="#lab">Laboratory for Distributed Systems and Services (DSS)</a>.</p></section>
-<section class="card" id="journals"><h2>Journal Publications</h2><ol>
+<section class="card content-card" id="journals"><h2>Journal Publications</h2><ol>
 <li>H. Kafle and A. Banerjee, “Greedy Asymmetric Block Construction with Two-Side Verification for Solving Jigsaw Puzzles,” <em>IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences</em>, 2025.</li>
 <li>S. Pandey and A. Banerjee, “Cardinality constraint non-uniform sampling for maximizing reconstruction accuracy of time-varying signals,” <em>IEEE Transactions on Information Theory</em>, vol. 70, issue 9, pp. 6746–6756, June 2024.</li>
 <li>U. Prajapati, B. C. Chatterjee, and A. Banerjee, “GLBMF: Greedy-based Load Balancing in SDN by Reducing Switch Migrations and Prioritizing Mice Flow Traffic,” <em>Wireless Personal Communications</em>, Springer, 2024.</li>
@@ -67,7 +53,7 @@ footer{text-align:center;color:var(--muted);padding:22px;font-size:.9rem}
 <li>A. Banerjee and C.-T. King, “Building ring-like overlays on wireless ad hoc and sensor networks,” <em>IEEE Transactions on Parallel and Distributed Systems</em>, vol. 20(11), pp. 1553–1566, November 2009.</li>
 <li>H.-C. Lee, A. Banerjee, Y.-M. Fang, B.-J. Lee, and C.-T. King, “Design of a multi-functional wireless sensor for in-situ monitoring of debris flows,” <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 59(11), pp. 2958–2967, November 2010.</li>
 </ol></section>
-<section class="card" id="conferences"><h2>Conference Publications</h2><ol>
+<section class="card content-card" id="conferences"><h2>Conference Publications</h2><ol>
 <li>H. Kafle and A. Banerjee, “Solving large square jigsaw puzzles with quasi-linear candidate selection using DC-L1 norm,” VISAPP, Marbella, Spain, 2026 (accepted).</li>
 <li>M. Mondal and A. Banerjee, “DyNoS: Dynamic notary subset selection framework for validating cross-chain transactions using Stackelberg game,” 31st IEEE ICPADS, Hefei, China, 2025 (accepted).</li>
 <li>U. Prajapati, B. C. Chatterjee, and A. Banerjee, “FT-FSM: Fault-tolerant fractional switch migration for multi-controller software-defined networks,” IEEE ANTS, 2025 (accepted).</li>
@@ -92,10 +78,10 @@ footer{text-align:center;color:var(--muted);padding:22px;font-size:.9rem}
 <li>A. Banerjee, C. T. King, and H. C. Hsiao, “Embedding a Cluster-based Overlay Mesh in Mobile Ad hoc Networks without Cluster Heads,” ICPP, Oslo, Norway, 2005.</li>
 <li>H. C. Hsiao, P. S. Huang, A. Banerjee, and C. T. King, “Taking Advantage of the Overlay Geometrical Structures for Mobile Agent Communications,” IEEE IPDPS, Santa Fe, USA, 2004.</li>
 </ol></section>
-<section class="card" id="teaching"><h2>Teaching</h2><ol>
+<section class="card content-card" id="teaching"><h2>Teaching</h2><ol>
 <li>Advanced Data Structures and Algorithms (monsoon semester – 2025)</li><li>Fundamentals of Computer Programming (monsoon semester – 2025)</li><li>Design and Analysis of Algorithms (winter semester – 2025)</li><li>Data Structures (winter semester – 2025)</li><li>Advanced Data Structures and Algorithms (monsoon semester – 2024)</li><li>Computational Thinking (monsoon semester – 2024)</li><li>Design and Analysis of Algorithms (winter semester – 2024)</li><li>Cryptography and Network Security (winter semester – 2024)</li><li>Advanced Data Structures and Algorithms (monsoon semester – 2023)</li><li>Programming and Data Structures (monsoon semester – 2023)</li><li>Computer Networks</li>
 </ol></section>
-<section class="card" id="participations"><h2>Selected Conference Participations</h2><ol>
+<section class="card content-card" id="participations"><h2>Selected Conference Participations</h2><ol>
 <li>International Conference on Parallel and Distributed Systems (ICPADS 2025), Hefei, China, 14–17 December 2025.</li>
 <li>International Conference on Inventive Computation Technologies (ICICT 2024), Lalitpur, Nepal, 24–26 April 2024.</li>
 <li>High Performance Computing and Communications (HPCC 2023), Melbourne, Australia, 17–21 December 2023.</li>
@@ -108,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:22px;font-size:.9rem}
 <li>International Conference on Parallel Processing (ICPP 2005), Oslo, Norway.</li>
 <li>International Conference on Information Technology: Research and Education (ITRE 2005), Hsinchu, Taiwan.</li>
 </ol></section>
-<section class="card" id="lab"><h2>Laboratory for Distributed Systems and Services (DSS)</h2>
+<section class="card content-card" id="lab"><h2>Laboratory for Distributed Systems and Services (DSS)</h2>
 <p>The DSS Lab's research interests cover different aspects of the theory and practice of distributed systems, with a strong emphasis on scalability and high availability.</p>
 <p><a href="https://people.sau.int/~abanerjee/">Visit the original academic homepage</a> for the original laboratory and related resources.</p></section>
 <section class="card contact" id="contact"><h2>Contact</h2>
@@ -117,6 +103,6 @@ footer{text-align:center;color:var(--muted);padding:22px;font-size:.9rem}
 <p><strong>Institution:</strong> <a href="https://sau.int/" target="_blank" rel="noopener">South Asian University</a></p>
 </section>
 </main>
-<footer>Academic homepage content adapted from the <a href="https://people.sau.int/~abanerjee/">original website</a>. Built as a static, GitHub Pages-ready HTML page.</footer>
+<footer class="site-footer">Academic homepage content adapted from the <a href="https://people.sau.int/~abanerjee/">original website</a>. Built as a static, GitHub Pages-ready HTML page.</footer>
 </body>
 </html>
