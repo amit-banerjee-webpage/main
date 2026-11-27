@@ -46,18 +46,19 @@ body {
   box-shadow: 0 0 0 38px rgba(255,255,255,.035), 0 0 0 78px rgba(255,255,255,.025);
 }
 .profile-pic {
-    width: 112px;
-    height: 112px;
-    flex: 0 0 112px;
+    width: 128px;
+    height: 128px;
+    flex: 0 0 128px;
     object-fit: cover;
+    object-position: center 25%;
     border-radius: 50%;
 }
 
 @media (max-width: 640px) {
     .profile-pic {
-        width: 72px;
-        height: 72px;
-        flex-basis: 72px;
+        width: 84px;
+        height: 84px;
+        flex-basis: 84px;
     }
 }
 .hero { display: flex; align-items: center; gap: 30px; position: relative; z-index: 1; }
