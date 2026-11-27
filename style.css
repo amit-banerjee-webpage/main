@@ -24,6 +24,13 @@
 
 .meta { color: var(--muted); }
 
+body {
+    font-family: "Trebuchet MS", sans-serif;
+}
+h1, h2, h3 {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
