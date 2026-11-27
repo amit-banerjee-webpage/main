@@ -1,115 +1,96 @@
-.meta { color: var(--muted); }
+/* Amit Banerjee — academic profile
+   Clean academic layout, responsive profile header and compact publication lists.
+   Save this file as style.css beside index.html.
+*/
 
-/* Research-interest tags */
-.pill {
-  display: inline-flex;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #1b2b3b;
+  --muted: #65778a;
+  --navy: #123d5b;
+  --blue: #176487;
+  --teal: #269e9b;
+  --paper: #fff;
+  --canvas: #f3f7fa;
+  --line: #e1e9ef;
+  --soft: #eaf4f5;
+  --shadow: 0 12px 32px rgba(22, 49, 70, .07);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 8% 5%, rgba(38, 158, 155, .07), transparent 25rem),
+    var(--canvas);
+  font: 16px/1.65 "DM Sans", Arial, sans-serif;
+}
+
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+/* Profile banner */
+.site-header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 52px 0;
+  color: #fff;
+  background: linear-gradient(120deg, #102f49 0%, #155676 62%, #187c7c 100%);
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 430px;
+  height: 430px;
+  right: -170px;
+  bottom: -315px;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 38px rgba(255,255,255,.035),
+    0 0 0 78px rgba(255,255,255,.025);
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-left {
+  display: flex;
   align-items: center;
-  margin: 4px 5px 4px 0;
-  padding: 6px 12px;
-  color: #17626d;
-  background: var(--soft);
-  border: 1px solid #d6ebea;
-  border-radius: 999px;
-  font-size: .86rem;
-  font-weight: 600;
+  gap: 26px;
+  width: 100%;             /* Important: do not constrain this to 20% */
+  min-width: 0;
 }
 
-/* Contact and footer */
-.contact p { margin: 9px 0; }
-
-.site-footer {
-  padding: 25px 20px;
-  color: #718195;
+.profile-pic {
+  display: block;
+  flex: 0 0 116px;
+  width: 116px;
+  height: 116px;
+  max-width: 116px;
+  object-fit: cover;
+  object-position: center 25%;
+  border: 4px solid rgba(255,255,255,.95);
+  border-radius: 50%;
   background: #eaf0f4;
-  border-top: 1px solid var(--line);
-  font-size: .88rem;
-  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,.2);
 }
 
-.site-footer a {
-  color: var(--blue);
-  font-weight: 700;
-}
-
-/* Tablet and mobile */
-@media (max-width: 700px) {
-  .container {
-    width: min(100% - 28px, 1100px);
-  }
-
-  .site-header {
-    padding: 38px 0;
-  }
-
-  .profile-left {
-    align-items: flex-start;
-    gap: 17px;
-  }
-
-  .profile-pic {
-    flex-basis: 88px;
-    width: 88px;
-    height: 88px;
-    max-width: 88px;
-    border-width: 3px;
-  }
-
-  h1 {
-    font-size: clamp(1.8rem, 7vw, 2.5rem);
-  }
-
-  .role {
-    font-size: .9rem;
-  }
-
-  .sub {
-    font-size: .84rem;
-  }
-
-  .site-nav .inner {
-    width: 100%;
-    padding-inline: 9px;
-  }
-
-  .site-nav a {
-    padding: 12px 9px;
-    font-size: .8rem;
-  }
-
-  .page-layout {
-    padding-top: 20px;
-    padding-bottom: 35px;
-  }
-
-  .content-card {
-    margin-bottom: 14px;
-    padding: 21px 17px;
-    border-radius: 13px;
-  }
-
-  .content-card li {
-    margin: 4px 0;
-    line-height: 1.42;
-  }
-}
-
-@media (max-width: 390px) {
-  .profile-left { gap: 13px; }
-
-  .profile-pic {
-    flex-basis: 76px;
-    width: 76px;
-    height: 76px;
-    max-width: 76px;
-  }
-
-  .eyebrow { font-size: .67rem; }
-  .role { font-size: .82rem; }
-  .sub { font-size: .78rem; }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { transition-duration: .01ms !important; }
-}
+.profile-details {
+  min-width: 0;
